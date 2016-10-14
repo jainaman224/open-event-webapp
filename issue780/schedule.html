@@ -39,21 +39,12 @@
       <nav class="navbar navbar-default navbar-fixed-top">
           <div class=container>
               <div class="navbar-header navbar-left pull-left">
-                  <a class=navbar-brand href="">
+                  <a class=navbar-brand href=.>
                           <img alt="FOSSASIA 2016" class="logo logo-dark" src=images/fossasia-dark.png>
                   </a>
               </div>
   
           <div class="navbar-header navbar-right pull-right">
-            <ul style=margin-left:20px class="nav navbar-nav pull-left">
-                  <li class=pull-left><a href=https://twitter.com/fossasia style=padding-right:0;padding-left:0;margin-left:15px><i class="fa fa-lg fa-twitter" aria-hidden=true title=twitter></i></a></li>
-                  <li class=pull-left><a href=https://github.com/fossasia style=padding-right:0;padding-left:0;margin-left:15px><i class="fa fa-lg fa-github" aria-hidden=true title=github></i></a></li>
-                  <li class=pull-left><a href=https://www.facebook.com/fossasia style=padding-right:0;padding-left:0;margin-left:15px><i class="fa fa-lg fa-facebook" aria-hidden=true title=facebook></i></a></li>
-                  <li class=pull-left><a href=https://www.flickr.com/photos/fossasia style=padding-right:0;padding-left:0;margin-left:15px><i class="fa fa-lg fa-flickr" aria-hidden=true title=flickr></i></a></li>
-                  <li class=pull-left><a href=https://plus.google.com/108920596016838318216 style=padding-right:0;padding-left:0;margin-left:15px><i class="fa fa-lg fa-google-plus" aria-hidden=true title=google-plus></i></a></li>
-                  <li class=pull-left><a href=https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ style=padding-right:0;padding-left:0;margin-left:15px><i class="fa fa-lg fa-youtube-play" aria-hidden=true title=youtube-play></i></a></li>
-                  <li class=pull-left><a href=https://www.linkedin.com/groups/FOSSASIA-3762811 style=padding-right:0;padding-left:0;margin-left:15px><i class="fa fa-lg fa-linkedin" aria-hidden=true title=linkedin></i></a></li>
-            </ul>
             <button type=button class=navbar-toggle data-toggle=collapse data-target=.navbar-collapse style=margin-left:2em;margin-top:1em>
               <span class=sr-only>Toggle navigation</span>
               <span class=icon-bar></span>
@@ -70,6 +61,15 @@
               <li class=navlink><a id=trackslink href=tracks.html>Tracks</a></li>
               <li class=navlink><a id=roomslink href=rooms.html>Rooms</a></li>
               <li class=navlink><a id=speakerslink href=speakers.html>Speakers</a></li>
+  
+                  <li class="pull-left social-icons"><a href=https://twitter.com/fossasia style=padding-right:0;padding-left:0;margin-left:15px><i class="fa fa-lg fa-twitter" aria-hidden=true title=twitter></i></a></li>
+                  <li class="pull-left social-icons"><a href=https://github.com/fossasia style=padding-right:0;padding-left:0;margin-left:15px><i class="fa fa-lg fa-github" aria-hidden=true title=github></i></a></li>
+                  <li class="pull-left social-icons"><a href=https://www.facebook.com/fossasia style=padding-right:0;padding-left:0;margin-left:15px><i class="fa fa-lg fa-facebook" aria-hidden=true title=facebook></i></a></li>
+                  <li class="pull-left social-icons"><a href=https://www.flickr.com/photos/fossasia style=padding-right:0;padding-left:0;margin-left:15px><i class="fa fa-lg fa-flickr" aria-hidden=true title=flickr></i></a></li>
+                  <li class="pull-left social-icons"><a href=https://plus.google.com/108920596016838318216 style=padding-right:0;padding-left:0;margin-left:15px><i class="fa fa-lg fa-google-plus" aria-hidden=true title=google-plus></i></a></li>
+                  <li class="pull-left social-icons"><a href=https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ style=padding-right:0;padding-left:0;margin-left:15px><i class="fa fa-lg fa-youtube-play" aria-hidden=true title=youtube-play></i></a></li>
+                  <li class="pull-left social-icons"><a href=https://www.linkedin.com/groups/FOSSASIA-3762811 style=padding-right:0;padding-left:0;margin-left:15px><i class="fa fa-lg fa-linkedin" aria-hidden=true title=linkedin></i></a></li>
+  
             </ul>
           </div>
         </div>
@@ -23542,6 +23542,6 @@
   <script src=./dependencies/bootstrap.min.js></script>
   <script src=./js/navbar.js></script>
   <script src=./js/scroll.js></script>
-  <script>$(document).ready(function(){$(".fossasia-filter:first").focus(),$(".fossasia-filter:first").change(function(){var e=$(this).val();return e?$(".day-filter").each(function(){var i=1;$(this).find(".time-filter").each(function(){var t=1;$(this).find(".track-inline").each(function(){$(this).find(".tip-description").text().toUpperCase().indexOf(e.toUpperCase())<0&&$(this).find(".session-speakers-list a p span").text().toUpperCase().indexOf(e.toUpperCase())<0&&$(this).find(".session-speakers-more").text().toUpperCase().indexOf(e.toUpperCase())<0&&$(this).find(".event").text().toUpperCase().indexOf(e.toUpperCase())<0?$(this).hide():(t=0,$(this).show())}),1==t?$(this).hide():(i=0,$(this).show())}),1==i?$(this).hide():$(this).show()}):$(".day-filter").each(function(){$(this).find(".time-filter").each(function(){$(this).find(".track-inline").each(function(){$(this).show()}),$(this).show()}),$(this).show()}),0==$(".day-filter:visible").length?($("#no-results").remove(),$(".search-filter:first").after('<p id="no-results">No matching results found.</p>')):$("#no-results").remove(),!1}).keyup(function(){$(this).change()})})</script>
+  <script>$(document).ready(function(){$(".fossasia-filter:first").change(function(){var e=$(this).val();return e?$(".day-filter").each(function(){var t=1;$(this).find(".time-filter").each(function(){var i=1;$(this).find(".track-inline").each(function(){$(this).find(".tip-description").text().toUpperCase().indexOf(e.toUpperCase())<0&&$(this).find(".session-speakers-list a p span").text().toUpperCase().indexOf(e.toUpperCase())<0&&$(this).find(".session-speakers-more").text().toUpperCase().indexOf(e.toUpperCase())<0&&$(this).find(".event").text().toUpperCase().indexOf(e.toUpperCase())<0?$(this).hide():(i=0,$(this).show())}),1==i?$(this).hide():(t=0,$(this).show())}),1==t?$(this).hide():$(this).show()}):$(".day-filter").each(function(){$(this).find(".time-filter").each(function(){$(this).find(".track-inline").each(function(){$(this).show()}),$(this).show()}),$(this).show()}),0==$(".day-filter:visible").length?($("#no-results").remove(),$(".search-filter:first").after('<p id="no-results">No matching results found.</p>')):$("#no-results").remove(),!1}).keyup(function(){$(this).change()})})</script>
 </body>
 </html>
